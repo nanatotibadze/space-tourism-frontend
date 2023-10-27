@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://space-tourism-frontend-vert.vercel.app/)
+- Solution URL:(https://space-tourism-frontend-vert.vercel.app/)
 
 ## My process
 
