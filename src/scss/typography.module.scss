@@ -1,0 +1,136 @@
+@use "base.module" as variables;
+
+%heading {
+  font-family: variables.$font-secondary;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: variables.$white;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 15rem;
+  line-height: 17rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    line-height: 15rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 10rem;
+  line-height: 11.46rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    font-size: 8rem;
+    line-height: 9rem;
+    text-align: center;
+  }
+}
+
+.heading-3 {
+  text-wrap: nowrap;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    font-size: 2.4rem;
+    line-height: 2.75rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    font-size: 1.9rem;
+    line-height: 2rem;
+  }
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    font-size: 2.4rem;
+    line-height: 2.75rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+}
+
+.heading-5 {
+  font-family: variables.$font-primary;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: variables.$white;
+  font-size: 2.8rem;
+  line-height: 3.36rem;
+  letter-spacing: 0.472rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.338rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    font-size: 1.6rem;
+    line-height: 1.92rem;
+    letter-spacing: 0.27rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+}
+
+.heading-6 {
+  @extend %heading;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+}
+
+.num-text {
+  opacity: 0.25;
+  font-weight: 700;
+  margin-right: 2rem;
+  @media only screen and (max-width: variables.$bp-smallest) {
+    margin-right: 1rem;
+  }
+}
+
+.paragraph_main {
+  font-family: variables.$font-primary;
+  color: variables.$secondary;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}

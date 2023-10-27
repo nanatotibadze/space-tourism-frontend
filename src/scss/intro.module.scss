@@ -1,0 +1,110 @@
+@use "base.module" as variables;
+
+.intro {
+  margin: 10rem auto;
+  text-align: center;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    margin: 20rem auto;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    margin: 11rem auto;
+  }
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    margin: 8rem auto;
+  }
+}
+
+.intro-title {
+  text-align: center;
+  align-self: center;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    grid-gap: 0.24rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    grid-gap: 0.14rem;
+  }
+}
+
+.intro-text {
+  width: 45rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    width: 32.7rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    width: 25rem;
+  }
+}
+
+.intro-button-section {
+  text-align: center;
+  align-self: center;
+}
+
+.intro-button {
+  text-decoration: none;
+  border: none;
+  border-radius: 50%;
+  width: 27.4rem;
+  height: 27.4rem;
+  margin-top: 10rem;
+  box-shadow: 1 2rem 5rem rgba(0, 0, 0, 0.1);
+  font-family: variables.$font-secondary;
+  color: variables.$primary;
+  font-family: variables.$font-secondary;
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  line-height: 3.77rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+
+  @media only screen and (max-width: variables.$bp-small) {
+    font-size: 2rem;
+    line-height: 2.29rem;
+    letter-spacing: 0.125rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.125rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-large) {
+    margin-top: 20rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    margin-top: 5rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  @media only screen and (max-width: variables.$bp-smallest) {
+    margin-top: 4rem;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active,
+  &:link {
+    outline: rgba(0, 0, 0, 0.7) 7rem solid;
+  }
+}
+.link,
+.link:active,
+.link:visited {
+  text-decoration: none;
+  color: variables.$primary;
+}

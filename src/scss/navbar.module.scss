@@ -1,0 +1,246 @@
+@use "base.module" as variables;
+
+.navbar {
+  margin-top: 4rem;
+  margin-left: 4rem;
+  font-family: variables.$font-primary;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.27rem;
+  padding: 0;
+  color: variables.$white;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.23rem;
+    padding: 0;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    font-size: 1.6rem;
+    line-height: 1.92rem;
+    letter-spacing: 0.3rem;
+    margin-left: 2.4rem;
+    margin-top: 0;
+    justify-content: end;
+    padding-top: 0;
+  }
+
+  &_line {
+    width: 47rem;
+    height: 8px;
+    opacity: 0.25;
+    color: variables.$white;
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+    z-index: 99999;
+    mix-blend-mode: normal;
+
+    @media only screen and (max-width: 1200px) {
+      width: 25rem;
+    }
+
+    @media only screen and (max-width: variables.$bp-large) {
+      display: none;
+    }
+  }
+
+  li {
+    padding: 0 2rem;
+
+    a {
+      padding: 0rem 1rem;
+      color: variables.$white;
+      text-decoration: none;
+      padding-bottom: 3rem;
+      margin-bottom: 0;
+
+      @media only screen and (max-width: variables.$bp-smallest) {
+        padding: 0;
+      }
+    }
+
+    @media only screen and (max-width: variables.$bp-small) {
+      padding-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: variables.$bp-smallest) {
+      padding-bottom: 2rem;
+    }
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    border-bottom: solid variables.$white 3px;
+    color: variables.$white;
+  }
+}
+
+.navbar_navigation {
+  padding: 4rem 12rem 3.7rem 16rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  box-shadow: 1 2rem 5rem rgba(0, 0, 0, 0.1);
+  margin-right: 0;
+  justify-self: end;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    padding: 4rem 4rem;
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    display: none; ///mobilze xom offcanvas vaketebt da sadme es ar darenderdes
+  }
+}
+
+.navbar-brand_icon {
+  margin-left: 0;
+  margin-top: 0;
+  width: 5rem;
+  height: 5rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.container-fluid {
+  margin-right: 0;
+  padding: 0;
+  margin-top: 0;
+  @media only screen and (max-width: variables.$bp-small) {
+    margin-right: 3.4rem;
+  }
+}
+
+.navbar-toggler-icon {
+  margin-top: 2rem;
+  width: 2.4rem;
+  height: 2.1rem;
+  color: #d0d6f9;
+  margin-right: 0;
+}
+
+.toggleButton {
+  border: none;
+  align-items: flex-end;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: none;
+  justify-content: end;
+  display: flex;
+  justify-items: end;
+}
+
+.close-button {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  background-color: inherit;
+
+  @media only screen and (max-width: variables.$bp-small) {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    right: 2.7rem;
+    z-index: 1000;
+  }
+}
+
+hr {
+  width: 80%;
+  position: absolute;
+  border: none;
+  border-bottom: 2px solid rgba(141, 123, 123, 0.494);
+  top: 20%;
+  right: -4%;
+  z-index: 4;
+}
+
+.num {
+  font-weight: 800;
+  visibility: visible;
+  @media only screen and (max-width: variables.$bp-large) {
+    visibility: hidden;
+  }
+  @media only screen and (max-width: variables.$bp-small) {
+    visibility: visible;
+  }
+}
+
+.navCollapse {
+  justify-content: end;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: variables.$bp-small) {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.offcanvas {
+  width: 26rem !important;
+  background: rgba(255, 255, 255, 0.04);
+  z-index: 99999;
+  text-decoration: none;
+
+  backdrop-filter: blur(40.774227142333984px);
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    list-style: none;
+  }
+  @media only screen and (max-width: variables.$bp-smallest) {
+    width: 20rem !important;
+  }
+}
+
+.offcanvas_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.27rem;
+}
+
+.closeButton {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 80%;
+}
+a,
+a:hover,
+a:focus {
+  color: variables.$white;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: solid variables.$white 3px;
+  color: variables.$white;
+}

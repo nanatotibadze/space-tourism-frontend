@@ -1,0 +1,119 @@
+$primary: #0b0d17;
+$secondary: #d0d6f9;
+$tertiary: #383b4b;
+$white: #ffff;
+
+$font-primary: "Barlow Condensed", sans-serif;
+$font-secondary: "Bellefair", serif;
+
+$bp-large: 65.125em; // 1000px
+$bp-small: 48.0625em; //768px
+$bp-smallest: 21.875em; //350px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: $font-primary;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  position: relative;
+  max-height: 100vh;
+
+  min-width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.main {
+  font-size: 62.5%;
+  font-size: 2rem;
+  font-family: $font-primary;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+  }
+}
+
+.destination {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+  }
+}
+
+.crew {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+  }
+}
+
+.technology {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  padding-right: 0;
+  margin: 0;
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+  }
+}
+
+.title {
+  margin-left: 8rem;
+  margin-top: 4rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 4rem;
+    margin-left: 4rem;
+    text-align: left;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin: 2rem auto;
+    text-align: center;
+  }
+}
